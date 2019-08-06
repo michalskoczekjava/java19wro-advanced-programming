@@ -15,6 +15,7 @@ public class StringHashSet implements Set<String> {
         buckets = new ArrayList<>();
         for (int i = 0; i < 4; i++) {
             buckets.add(new ArrayList<>());
+
         }
     }
 
