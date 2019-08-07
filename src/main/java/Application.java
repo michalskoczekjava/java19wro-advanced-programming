@@ -28,8 +28,23 @@ public class Application {
         set.add("Jakub");
         set.add("Marek");
         set.add("Marek");
-
         System.out.println(set);
+
+        set.remove("Ala");
+        System.out.println(set);
+
+        System.out.println(set.contains("Alan"));
+        System.out.println(set.contains("JozinZBazin"));
+
+        System.out.println(set.size());
+
+        System.out.println(set.isEmpty());
+
+        set.clear();
+        System.out.println(set);
+
+        System.out.println(set.isEmpty());
+
     }
 
     private static void experimentWithArrayList(int size){
@@ -50,6 +65,4 @@ public class Application {
             boolean contains = numbers.contains(i);
         }
     }
-
-
 }
