@@ -1,6 +1,7 @@
-import stringhashset.StringHashSet;
+import stringhashset.CustomHashMap;
 
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
 import java.util.stream.IntStream;
 
@@ -10,6 +11,16 @@ import static java.util.stream.Collectors.toSet;
 public class Application {
 
     public static void main(String[] args) {
+
+        Map<String, String> map = new CustomHashMap<>();
+
+        map.put("Jan", "Kowalski");
+        map.put("Danuta", "Nowak");
+
+        System.out.println(map);
+
+
+
 
 //        long start = System.currentTimeMillis();
 //        experimentWithArrayList(10_000);
@@ -22,28 +33,28 @@ public class Application {
 //        System.out.println(end2 - start2);
 
 
-        Set<String>set = new StringHashSet();
-        set.add("Ala");
-        set.add("Alan");
-        set.add("Jakub");
-        set.add("Marek");
-        set.add("Marek");
-        System.out.println(set);
-
-        set.remove("Ala");
-        System.out.println(set);
-
-        System.out.println(set.contains("Alan"));
-        System.out.println(set.contains("JozinZBazin"));
-
-        System.out.println(set.size());
-
-        System.out.println(set.isEmpty());
-
-        set.clear();
-        System.out.println(set);
-
-        System.out.println(set.isEmpty());
+//        Set<String>set = new StringHashSet();
+//        set.add("Ala");
+//        set.add("Alan");
+//        set.add("Jakub");
+//        set.add("Marek");
+//        set.add("Marek");
+//        System.out.println(set);
+//
+//        set.remove("Ala");
+//        System.out.println(set);
+//
+//        System.out.println(set.contains("Alan"));
+//        System.out.println(set.contains("JozinZBazin"));
+//
+//        System.out.println(set.size());
+//
+//        System.out.println(set.isEmpty());
+//
+//        set.clear();
+//        System.out.println(set);
+//
+//        System.out.println(set.isEmpty());
 
     }
 
