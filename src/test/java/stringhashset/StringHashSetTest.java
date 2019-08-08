@@ -1,4 +1,4 @@
-package hashSet;
+package stringhashset;
 
 import org.junit.Test;
 

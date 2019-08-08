@@ -1,4 +1,4 @@
-package hashSet;
+package stringhashset;
 
 import java.util.*;
 import java.util.function.Consumer;
